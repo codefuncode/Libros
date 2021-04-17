@@ -1,0 +1,24 @@
+CAPÍTULO 2 Fundación
+
+
+Fundación
+
+Comenzaremos nuestro marco al observar un código fundamental (enfocado por OOP) en el que se basarán los componentes básicos. Lo primero que veremos es cómo ejecutar código que se distribuye en varios archivos. También veremos qué hacer cuando nos encontramos con errores. Finalmente, crearemos un medio conveniente de clasificación y recuperación de metadatos de clase.
+
+
+Objetivos
+		Necesitamos desarrollar un medio para cargar clases automáticamente. Las clases deben ubicarse en función de sus nombres, y estos nombres deben traducirse en una jerarquía de carpetas.
+
+		Necesitamos entender y definir subclases de excepción personalizados, para que podamos manejar los tipos de errores más comunes que podrían ocurrir.
+
+		También debemos definir un sistema de clases estáticas que incluyen
+		Métodos de utilidad para una serie de tipos de datos.
+
+		También debemos desarrollar un medio para identificar la estructura (y el uso previsto) de nuestras clases marco que depende del uso de
+		Código especial Comentarios.
+
+
+
+Carga automática
+
+Debido a que vamos a escribir un gran código, es seguro asumir que queremos estructurar claramente el código, para evitar la confusión a medida que aumenta la cantidad de código. Hay algunas formas en las que podríamos hacer esto, y uno de ellos está guardando trozos de código separados en archivos separados. Un problema que surge de este enfoque a la estructura del código es que tendremos que hacer referencia a estos externalistas de código desde un solo punto de entrada. Las solicitudes a un servidor web tienden a enrutarse a un solo archivo en el directorio Webroot del servidor. Por ejemplo, los servidores web de Apache generalmente se configuran para enrutar las solicitudes predeterminadas a index.php. Podemos mantener todo nuestro código de marco en este único archivo, o podemos dividirlo en varios archivos y hacerlo desde Index.PHP. PHP proporciona cuatro declaraciones básicas para que incluyamos scripts externos dentro del flujo del programa. Estos se muestran en la listado 2-1.
