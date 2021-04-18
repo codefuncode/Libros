@@ -70,8 +70,9 @@ Frameworks MVC populares
 Hay muchos frameworks PHP geniales disponibles, pero si limitamos nuestra vista a solo tres, creo que podemos tener una buena idea de lo que tienen en común y lo que hace que cada uno sea especial. Estos no son los mejores ni los únicos frameworks PHP MVC, sino simplemente una buena muestra de los diferentes enfoques para el desarrollo PHP MVC.
 
 
-CodeIgniter
 
+
+CodeIgniter
 
 CodeIgniter es el primero y más simple de los marcos que analizaremos. Está desarrollado y mantenido por EllisLab y puede describirse como un marco de código abierto (aunque estrictamente controlado) que forma la base del CMS (Sistema de gestión de contenido) premium de EllisLab, ExpressionEngine. Ha existido durante siglos, sin embargo, sus ideales han cambiado muy poco en todos los años desde que lo usé por primera vez. Se esfuerza por mantener una huella pequeña, una excelente documentación para desarrolladores y una alta calidad de código. No disfruta de los mismos niveles de popularidad que algunos de los otros marcos de los que hablaremos, y esto se debe en parte a cómo EllisLab ha gestionado la comunidad CodeIgniter. Recientemente han comenzado a abordar este problema con nuevos conferencias y personal, y las cosas están mejorando para este marco. También ha inspirado otros frameworks, dando origen a proyectos como KohanaPHP.
 
@@ -84,12 +85,91 @@ Nota Puede descargar CodeIgniter en http://codeigniter.com. También puede obten
 
 Zend Framework
 
-
 Zend Framework es una colección extensa de bibliotecas de código poco acopladas que pueden formar la base de una arquitectura MVC. Zend Framework requiere bastante esfuerzo para comprender y dominar en relación con otros marcos MVC populares. Está desarrollado por Zend Technologies y disfruta de todos los beneficios de una comunidad grande y estable y de una amplia adopción. Mientras que los marcos como CodeIgniter se esfuerzan por ser livianos, favoreciendo solo lo esencial, Zend Framework incluye bibliotecas que ayudan a los desarrolladores a utilizar una amplia gama de servicios y API de terceros.
 
+Nota: Puede descargar Zend Framework en http://framework.zend.com. También puede obtener más información sobre Zend en http://zend.com.
 
 
-================================================================================================================================
+
+
+CakePHP
+
+CakePHP es posiblemente el más popular de los tres marcos. A diferencia de los dos marcos anteriores, no se rige por ninguna entidad corporativa. Tiene una gran comunidad y es ampliamente adoptado.
+
+Favorece la convención sobre la configuración, lo que significa que muchos de los detalles más finos se asumen y automatizan. Esto es evidente en todas las áreas del marco, y a menudo te encontrarás preguntándote cómo CakePHP está haciendo algo que no le pediste que hiciera, tanto bueno como malo. Esto significa que puede desarrollar una aplicación rápidamente, pero también que puede tener dificultades cuando necesite realizar cambios muy específicos.
+
+Esto incluso se ve en la herramienta de línea de comando de generación de código: Bake. En cuestión de minutos, puede generar una aplicación que funcione, simplemente siguiendo las indicaciones de la línea de comando y llenando los espacios en blanco con los parámetros y comportamientos predeterminados.
+
+Nota: Puede descargar CakePHP en http://cakephp.org.
+
+
+
+Patrones de diseño
+
+Nos centraremos en el patrón de diseño de MVC, y para lograrlo, deberemos usar otros patrones de diseño más simples para las bibliotecas en las que se construye el marco. Los patrones de diseño que revisaremos a menudo se pueden aplicar al desarrollo de procedimientos, pero los estaremos mirando en el contexto de la programación orientada a objetos.
+
+Esto significa que estaremos tratando con clases (planos que contienen propiedades y funciones de realización), y cómo interactúan entre sí. Si no está familiarizado con algunos de los conceptos que siguen, es posible que desee referirse a la imprimación de alojamiento, o al sitio de referencia.
+
+Nota: Si desea saber más sobre la programación orientada a objetos, o cualquiera de las otras palabras clave / conceptos que siguen, puede leer más en http://en.wikipedia.org/wiki/object-oriented_programming
+
+
+
+Único "Singleton"
+
+Cuando construimos software OOP, tratamos con muchas clases. Si bien es ideal para diseñar estas clases de tal manera que muchos casos pueden estar activos simultáneamente, habrá ocasiones en que solo necesitamos prácticamente una instancia de una clase, para un propósito o contexto específico.
+
+Singleton es un patrón de diseño que garantiza que una clase solo pueda tener una instancia a la vez. Una clase de singleton tradicional mantiene una instancia de sí misma en una propiedad estática interna, y no puede ser instanciada (o clonada) de la manera habitual de que una clase que no sea singleton. Singletons tiene un método de accesorios de instancia especial, que devuelve la propiedad de instancia interna, o crea una nueva instancia para devolver y almacenar.
+
+ 
+Registro
+
+Un registro es una clase que puede almacenar y devolver las instancias de clases estándar. Piense en ello como un gerente de equipo que trae a los jugadores del campo de juego y las nuevas sean las nuevas según lo requiera. Utilizamos clases de registro para administrar una cantidad finita de instancias de clase, de modo que no necesitamos mantener en las clases de reinstelación de las que el registro ya contiene instancias de.
+
+Otra forma de pensar en una clase de registro es que nos ayuda a tratar las clases normales como singletons, sin tener que hacer esas clases normales singletos. Podríamos encontrarnos en una situación en la que necesitamos dos instancias de una clase. Tal vez necesitemos conectarnos a dos bases de datos separadas, pero no queremos continuar con ellos, por lo que usamos un registro.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==========================================================================================
 
 Sobre el Autor
 

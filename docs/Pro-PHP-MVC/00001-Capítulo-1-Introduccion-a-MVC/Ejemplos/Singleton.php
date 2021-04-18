@@ -87,6 +87,26 @@ class Singleton2
     }
 }
 
+// =================================================
+// Estoy las  clases  que se usan en la arquitectura de software usando PHP  y me encuentro este ejemplo y otros más que no tienen  {  :  self  }
+class Singleton3
+{
+    private static $instance = null;
+
+    private function __construct()
+    {}
+
+    public static function getInstance(): self
+    {
+        if (null === self::$instance) {
+            self::$instance = new self();
+        }
+
+        return self::$instance;
+    }
+}
+
+// =================================================
 class SingletonChild2 extends Singleton
 {
 
@@ -99,7 +119,7 @@ echo '<br/>';
 echo '<br/>';
 echo '===================================================';
 echo '<br/>';
-echo 'En eta sección se comparan los objetos.';
+echo 'En esta sección se comparan los objetos.';
 echo '<br/>';
 $obj = Singleton2::getInstance();
 echo '<br/>';
