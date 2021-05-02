@@ -1,0 +1,14 @@
+Saludos y gracias por adelantado. 
+
+Estoy estudiando los patrones de diseño  y sus diferencias. Entonces veo que en los ejemplos de cases  Singleton "Única" una de ellas usa ( : self ) justo después de de los paréntesis que declaran la función y antes de las llaves 
+
+public static function getInstance(): self 
+
+esta esta en la imagen dela case Singleton1 
+
+
+------------------------------------------------------------
+
+Sin embargo la case de nombrada Singleton2 no posee esa declaración. En mis pruebes de ejecución no me salta ningún error se sintaxis.  Ni en la clase Singleton1  ni en la case Singleton2 ninguna da errores de sintaxis. Sin embargo me gustaría tener claro donde en la documentación  aparece la declaración :self justo después de declarar una función y antes de las llaves. 
+
+

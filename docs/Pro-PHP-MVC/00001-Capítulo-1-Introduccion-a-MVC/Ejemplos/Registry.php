@@ -1,8 +1,8 @@
 <?php
 /**
- * Generic storage class helps to manage global data.
- * Here the error is "global". No data should be really global:
- * at most request-wide.
+ * La clase de almacenamiento genérico ayuda a administrar los datos globales.
+ * Aquí el error es 'global'. Ningún dato debería ser realmente global:
+ * como máximo en toda la solicitud.
  *
  * @category   Zend
  * @package    Zend_Registry
@@ -12,20 +12,20 @@
 class Zend_Registry extends ArrayObject
 {
     /**
-     * Class name of the singleton registry object.
+     * Nombre de clase del objeto de registro singleton.
      * @var string
      */
     private static $_registryClassName = 'Zend_Registry';
 
     /**
-     * Registry object provides storage for shared objects.
+     * El objeto de registro proporciona almacenamiento para objetos compartidos.
      * @var Zend_Registry
      */
     private static $_registry = null;
 
     /**
-     * Retrieves the default registry instance.
-     * A Singleton is a recipe for hiding dependencies to a class.
+     * Recupera la instancia de registro predeterminada.
+     * Un Singleton es una receta para ocultar dependencias de una clase.
      *
      * @return Zend_Registry
      */
@@ -39,8 +39,7 @@ class Zend_Registry extends ArrayObject
     }
 
     /**
-     * Initialize the default registry instance.
-     *
+     * Inicialice la instancia de registro predeterminada.     *
      * @return void
      */
     protected static function init()
@@ -49,11 +48,11 @@ class Zend_Registry extends ArrayObject
     }
 
     /**
-     * getter method, basically same as offsetGet().
+     * método getter, básicamente igual que offsetGet ().
      *
-     * This method can be called from an object of type Zend_Registry, or it
-     * can be called statically.  In the latter case, it uses the default
-     * static instance stored in the class.
+     * Este método se puede llamar desde un objeto de tipo Zend_Registry, o
+     * se puede llamar estáticamente. En el último caso, utiliza el valor predeterminado
+     * instancia estática almacenada en la clase.
      *
      * @param string $index - get the value associated with $index
      * @return mixed
@@ -72,15 +71,15 @@ class Zend_Registry extends ArrayObject
     }
 
     /**
-     * setter method, basically same as offsetSet().
+     * método setter, básicamente igual que offsetSet ().
      *
-     * This method can be called from an object of type Zend_Registry, or it
-     * can be called statically.  In the latter case, it uses the default
-     * static instance stored in the class.
+     * Este método se puede llamar desde un objeto de tipo Zend_Registry, o
+     * se puede llamar estáticamente. En el último caso, utiliza el valor predeterminado
+     * instancia estática almacenada en la clase.
+     * instancia estática almacenada en la clase.
      *
-     * @param string $index The location in the ArrayObject in which to store
-     *   the value.
-     * @param mixed $value The object to store in the ArrayObject.
+     * @param string $ index La ubicación en el ArrayObject en el que almacenar
+     * @param valor $ mixto El objeto que se va a almacenar en ArrayObject.
      * @return void
      */
     public static function set($index, $value)
@@ -90,8 +89,8 @@ class Zend_Registry extends ArrayObject
     }
 
     /**
-     * Returns TRUE if the $index is a named value in the registry,
-     * or FALSE if $index was not found in the registry.
+     * devuelve verdadero si $ index es un valor con nombre en el registro,
+     * o falso si $ index no fue
      *
      * @param  string $index
      * @return boolean
@@ -116,3 +115,13 @@ class Zend_Registry extends ArrayObject
         parent::__construct($array, $flags);
     }
 }
+
+// $instancia = new Zend_Registry;
+
+var_dump(Zend_Registry::isRegistered("Zend_Registry"));
+
+$instancia = Zend_Registry::isRegistered("Zend_Registry");
+
+var_dump($instancia);
+// $instancia->getInstance();
+// var_dump(Zend_Registry-);

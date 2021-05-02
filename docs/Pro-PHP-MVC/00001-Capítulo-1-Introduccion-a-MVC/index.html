@@ -2,21 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
-    <title>
-      Pro PHP MVC
-    </title>
-    <style type="text/css">
-      h2{
+    <link href="../img/prophpmvc.jpg" rel="shortcut icon" type="image/x-icon">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+      <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+      <title>
+        Pro PHP MVC
+      </title>
+      <style type="text/css">
+        h2{
         margin-top: 50px;
       }
        h3{
         margin-top: 25px;
       }
-    </style>
-    <script src="../js/chat.js" type="text/javascript">
-    </script>
+      </style>
+      <script src="../js/Tawk.js" type="text/javascript">
+      </script>
+    </link>
   </head>
   <body>
     <div class="w3-bar w3-light-grey">
@@ -129,9 +131,11 @@
         ¿Qué es MVC?
       </h3>
       <p>
-        MVC (Model-View-Controller) es un patrón de diseño de software construido alrededor de la ínter-conexión de tres tipos de componentes principales, en un lenguaje de programación como PHP, a menudo con un fuerte enfoque en paradigmas de software de programación orientada a objetos (OOP). . Los tres tipos de componentes se denominan vagamente modelos, vistas y controladores. Hablemos de ellos individualmente y luego veamos cómo encajan. El modelo es donde se guarda toda la lógica comercial de una aplicación. La lógica empresarial puede ser cualquier cosa específica sobre cómo una aplicación almacena datos o utiliza servicios de terceros para cumplir con sus requisitos comerciales. Si la aplicación debe acceder a información en una base de datos, el código para hacerlo se mantendrá en el modelo. Si necesita, por ejemplo, obtener datos de existencias o tuitear sobre un nuevo producto, ese código también se mantendría en el modelo. La vista es donde se guardan todos los elementos de la interfaz de usuario de nuestra aplicación. Esto puede incluir nuestro marcado HTML, hojas de estilo CSS y archivos JavaScript. Todo lo que un usuario ve o con lo que interactúa se puede mantener en una vista y, a veces, lo que el usuario ve es en realidad una combinación de muchas vistas diferentes en la misma solicitud. El controlador es el componente que conecta modelos y vistas entre sí. Los controladores aíslan la lógica empresarial de un modelo de los elementos de la interfaz de usuario de una vista y manejan cómo responderá la aplicación a la interacción del usuario en la vista. Los controladores son el primer punto de entrada a este trío de componentes, porque la solicitud se pasa primero a un controlador, que luego creará una instancia de los modelos y vistas necesarios para cumplir con una solicitud a la aplicación. Ver la Figura 1-1
+        MVC (Model-View-Controller) es un patrón de diseño de software construido alrededor de la ínter-conexión de tres tipos de componentes principales, en un lenguaje de programación como PHP, a menudo con un fuerte enfoque en paradigmas de software de programación orientada a objetos (OOP). . Los tres tipos de componentes se denominan vagamente modelos, vistas y controladores. Hablemos de ellos individualmente y luego veamos cómo encajan. El modelo es donde se guarda toda la lógica comercial de una aplicación. La lógica empresarial puede ser cualquier cosa específica sobre cómo una aplicación almacena datos o utiliza servicios de terceros para cumplir con sus requisitos comerciales. Si la aplicación debe acceder a información en una base de datos, el código para hacerlo se mantendrá en el modelo. Si necesita, por ejemplo, obtener datos de existencias o tuitear sobre un nuevo producto, ese código también se mantendría en el modelo. La vista es donde se guardan todos los elementos de la interfaz de usuario de nuestra aplicación. Esto puede incluir nuestro marcado HTML, hojas de estilo CSS y archivos JavaScript. Todo lo que un usuario ve o con lo que interactúa se puede mantener en una vista y, a veces, lo que el usuario ve es en realidad una combinación de muchas vistas diferentes en la misma solicitud. El controlador es el componente que conecta modelos y vistas entre sí. Los controladores aíslan la lógica empresarial de un modelo de los elementos de la interfaz de usuario de una vista y manejan cómo responderá la aplicación a la interacción del usuario en la vista. Los controladores son el primer punto de entrada a este trío de componentes, porque la solicitud se pasa primero a un controlador, que luego creará una instancia de los modelos y vistas necesarios para cumplir con una solicitud a la aplicación.
       </p>
-      <img alt="" class="w3-image" src="../img/modelovistacontroladorimagen.png"/>
+      <div class="w3-container w3-center">
+        <img alt="" src="../img/Modelo-Vista-Controlador/Modelo-Vista-Controlador.png" style="width:100%;max-width:700px"/>
+      </div>
       <div class="">
         <div class="w3-panel w3-pale-yellow w3-topbar w3-bottombar w3-border-yellow">
           <p>
@@ -258,10 +262,22 @@
       <p>
         Otra forma de pensar en una clase de registro es que nos ayuda a tratar las clases normales como singletons, sin tener que hacer esas clases normales singletos. Podríamos encontrarnos en una situación en la que necesitamos dos instancias de una clase. Tal vez necesitemos conectarnos a dos bases de datos separadas, pero no queremos continuar con ellos, por lo que usamos un registro.
       </p>
-      <a href="https://designpatternsphp.readthedocs.io/en/latest/Structural/Registry/README.html">
-        https://designpatternsphp.readthedocs.io/en/latest/Structural/Registry/README.html
-      </a>
+      <div class="">
+        <div class="w3-panel w3-pale-yellow w3-topbar w3-bottombar w3-border-yellow">
+          Nota: Puedes leer más sobre el patrón de registro en
+          <a href="http://blog.fedecarg.com/2007/10/26/registry-pattern-or-dependency-injection-container" target="_blank">
+            http://blog.fedecarg.com/2007/10/26/registry-pattern-or-dependency-injection-container
+          </a>
+          <p>
+            <a href="https://designpatternsphp.readthedocs.io/en/latest/Structural/Registry/README.html" target="_blank">
+              https://designpatternsphp.readthedocs.io/en/latest/Structural/Registry/README.html
+            </a>
+          </p>
+        </div>
+      </div>
     </div>
+    <script src="../js/js.js" type="text/javascript">
+    </script>
     <!-- Pie de pagina  -->
   </body>
 </html>
