@@ -1,0 +1,9 @@
+eXtreme Programming Markup Language (XPML) utiliza varios documentos XML que están interrelacionados. Por ejemplo, las versiones se refieren a iteraciones, que se refieren a historias de usuarios, que pueden referirse a casos de uso. Se hace referencia a estos objetos por su nombre en los documentos XML, y cualquier código que los trate debe traducir estos nombres en referencias de objetos reales.
+
+Esta es la situación que describe el patrón de registro:
+
+Los objetos necesitan ponerse en contacto con otro objeto, sabiendo solo el nombre del objeto o el nombre del servicio que proporciona, pero no cómo contactarlo. Proporciona un servicio que toma el nombre de un objeto, servicio o rol y devuelve un proxy remoto que encapsula el conocimiento de cómo contactar el objeto nombrado.
+
+Es el mismo modelo básico de publicación / búsqueda que forma la base de una Arquitectura Orientada a Servicios (SOA) y para la capa de servicios en OSGi.
+
+En XP Studio, los objetos de interés nombrados son los objetos de planificación, p. Ej. lanzamientos, iteraciones y tal:

@@ -19,3 +19,49 @@ funcional en el que el resultado deseado se declara como el valor de una serie d
 lógica en la que el resultado deseado se declara como la respuesta a una pregunta sobre un sistema de hechos y reglas,
 matemático en el que el resultado deseado se declara como la solución de un problema de optimización
 reactivo en el que se declara el resultado deseado con flujos de datos y la propagación del cambio
+
+
+
+============================================================================================================================================
+Registry Pattern
+
+Motivación
+
+Para Crear un objeto conocido que otros objetos puedan usar para encontrar objetos y servicios comunes.
+
+Resumen
+
+Patrón muy básico y clásico que sugiere tener una ubicación central para objeto de interés común.
+Un registro es esencialmente un objeto global, o al menos parece uno incluso si no es tan global como parece.
+Los registros generalmente se implementan como singleton.
+No se recomienda mucho, ya que también se trata como anti patrón.
+
+Cuándo usar
+
+Por lo general, deberíamos evitar el uso de patrones de registro porque viola el principio de encapsulación.
+El registro solo debe usarse cuando no hay otras formas de compartir datos entre el objeto del mismo alcance.
+Una alternativa al registro podría ser
+El contexto principal / de la persona que llama podría ser otra alternativa en la que la persona que llama pasó su propio contexto (generalmente 'este' puntero) a la función llamada a través del constructor o agregando un parámetro adicional al método que se está llamando
+
+Alcance del registro
+
+La visibilidad del registro se puede definir en diferentes ámbitos según los requisitos.
+Hilo con alcance
+Proceso de alcance
+Aplicación con alcance
+Alcance del sistema
+
+Patrones relacionados
+
+Inversión de control: se utiliza para la configuración dinámica de la carga de objetos.
+Localizadores de servicios: pueden usar el registro para mapear los metadatos del servicio
+Inyección de dependencia: le permite implementar la configuración del registro fuera de la aplicación, como el archivo de configuración.
+
+Referencias
+
+MSDN: patrones en la biblioteca de aplicaciones compuestas
+MSDN: Por qué el patrón de registro es antipatrón. Y cuál es la alternativa para ello.
+
+
+Referencias 
+https://www.tutorialspoint.com/design_pattern/index.htm

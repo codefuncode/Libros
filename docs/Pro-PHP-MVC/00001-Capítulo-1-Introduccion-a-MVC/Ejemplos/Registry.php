@@ -1,4 +1,8 @@
 <?php
+
+//  REferencias para la comprensión
+// PHP implementación
+// https://en.wikipedia.org/wiki/Singleton_pattern
 /**
  * La clase de almacenamiento genérico ayuda a administrar los datos globales.
  * Aquí el error es 'global'. Ningún dato debería ser realmente global:
@@ -104,8 +108,8 @@ class Zend_Registry extends ArrayObject
     }
 
     /**
-     * Constructs a parent ArrayObject with default
-     * ARRAY_AS_PROPS to allow acces as an object
+     * Construye un objeto ArrayObject padre con el valor predeterminado
+     * ARRAY_AS_PROPS para permitir el acceso como objeto
      *
      * @param array $array data array
      * @param integer $flags ArrayObject flags
