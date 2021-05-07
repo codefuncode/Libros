@@ -7,3 +7,7 @@ Los objetos necesitan ponerse en contacto con otro objeto, sabiendo solo el nomb
 Es el mismo modelo básico de publicación / búsqueda que forma la base de una Arquitectura Orientada a Servicios (SOA) y para la capa de servicios en OSGi.
 
 En XP Studio, los objetos de interés nombrados son los objetos de planificación, p. Ej. lanzamientos, iteraciones y tal:
+
+
+
+Cualquier código que necesite hacer referencia a un objeto de planificación de este tipo, puede usar el registro:
