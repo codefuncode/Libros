@@ -10,17 +10,15 @@ class IdComparator
     public function __construct($p_matriz)
     {
         $this->matriz = $p_matriz;
+
     }
 
     public function getComparacion()
     {
-
-        $this->resultado =
-        "El valor del id 0 =" . $this->matriz[0]["id"] .
-        "y el valor del id 1 =" . $this->matriz[1]["id"];
-
-        return $his->resultado;
+        $this->resultado = [$this->matriz[0]["id"], $this->matriz[1]["id"]];
+        return $this->resultado;
     }
+
 }
 
 class DateComparator
@@ -32,16 +30,13 @@ class DateComparator
     public function __construct($p_matriz)
     {
         $this->matriz = $p_matriz;
+
     }
 
     public function getComparacion()
     {
-
-        $this->resultado =
-        "El valor del date 0 =" . $this->matriz[0]["id"] .
-        "y el valor del date 1 =" . $this->matriz[1]["id"];
-
-        return $his->resultado;
+        $this->resultado = [$this->matriz[0]["date"], $this->matriz[1]["date"]];
+        return $this->resultado;
     }
 }
 // ========================================================
@@ -52,7 +47,8 @@ class ObjectCollection
     //  Variables para trabajar
     public $instancia;
     public $matriz;
-    public $resultado;
+    public $elements;
+    public $objeto;
 
     public function __construct($p_matriz)
     {
@@ -63,18 +59,17 @@ class ObjectCollection
     public function setComparator($p_class)
     {
         // Establecer la instancia de la clase recibida por parámetro
-        $this->instancia = $p_class;
+        $this->objeto    = $p_class;
+        $this->instancia = $this->objeto($this->matriz);
 
     }
+
     public function sort()
     {
+        $this->elements = $this->instancia->getComparacion();
 
-        //  Retornara lo que retornara case reciba de la case de turno
-
-        $this->instancia($this->matriz);
-        $his->resultado = $this->instancia->getComparacion();
-        return $his->resultado;
     }
+
 }
 
 $elements = array(

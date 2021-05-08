@@ -1,0 +1,29 @@
+Conceptos orientados a objetos
+
+Antes de entrar en detalle, definamos términos importantes relacionados con la programación orientada a objetos.
+
+Clase: este es un tipo de datos definido por el programador, que incluye funciones locales y datos locales. Puede pensar en una clase como una plantilla para crear muchas instancias del mismo tipo (o clase) de objeto.
+
+Objeto: una instancia individual de la estructura de datos definida por una clase. Usted define una clase una vez y luego crea muchos objetos que le pertenecen. Los objetos también se conocen como instancia.
+
+Variable miembro: son las variables definidas dentro de una clase. Estos datos serán invisibles para el exterior de la clase y se puede acceder a ellos a través de funciones miembro. Estas variables se denominan atributo del objeto una vez que se crea un objeto.
+
+Función miembro: son las funciones definidas dentro de una clase y se utilizan para acceder a los datos del objeto.
+
+Herencia: cuando una clase se define heredando la función existente de una clase principal, se denomina herencia. Aquí la clase hija heredará todas o algunas funciones miembro y variables de una clase padre.
+
+Clase principal: una clase heredada por otra clase. Esto también se denomina clase base o superclase.
+
+Clase secundaria: una clase que hereda de otra clase. Esto también se denomina subclase o clase derivada.
+
+Polimorfismo: este es un concepto orientado a objetos donde la misma función se puede usar para diferentes propósitos. Por ejemplo, el nombre de la función seguirá siendo el mismo, pero tomará un número diferente de argumentos y puede realizar una tarea diferente.
+
+Sobrecarga: un tipo de polimorfismo en el que algunos o todos los operadores tienen diferentes implementaciones según los tipos de sus argumentos. De manera similar, las funciones también pueden sobrecargarse con diferentes implementaciones.
+
+Abstracción de datos: cualquier representación de datos en la que los detalles de implementación están ocultos (abstraídos).
+
+Encapsulación: se refiere a un concepto en el que encapsulamos todos los datos y las funciones de los miembros para formar un objeto.
+
+Constructor: se refiere a un tipo especial de función que se llamará automáticamente siempre que haya una formación de objeto de una clase.
+
+Destructor: se refiere a un tipo especial de función que se llamará automáticamente cada vez que un objeto se elimine o salga de su alcance.
