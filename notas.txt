@@ -1,1 +1,5 @@
 sudo /opt/lampp/lampp start
+
+https://hotexamples.com/examples/lcobucci.jwt/Token/validate/php-token-validate-method-examples.html
+
+https://stackoverflow.com/questions/51786990/how-to-validate-a-token-without-a-database

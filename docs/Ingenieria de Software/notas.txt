@@ -1,0 +1,228 @@
+Parte 1 Introducción a la ingeniería de software
+
+
+Capítulo 1 Introducción
+1.1 Desarrollo de software profesional 5
+1.2 Ética en la ingeniería de software 14
+1.3 Estudios de caso 
+
+
+
+
+Capítulo 2 Procesos de software
+
+2.1 Modelos de proceso de software 29
+2.2 Actividades del proceso 36
+2.3 Cómo enfrentar el cambio 43
+2.4 El Proceso Unificado Racional 50
+
+
+
+Capítulo 3 Desarrollo ágil de software 56
+3.1 Métodos ágiles 58
+3.2 Desarrollo dirigido por un plan y desarrollo ágil 62x
+Contenido
+3.3 Programación extrema 64
+3.4 Administración de un proyecto ágil 72
+3.5 Escalamiento de métodos ágiles 74
+
+
+Capítulo 4 Ingeniería de requerimientos
+82
+4.1 Requerimientos funcionales y no funcionales 84
+4.2 El documento de requerimientos de software 91
+4.3 Especificación de requerimientos 94
+4.4 Procesos de ingeniería de requerimientos 99
+4.5 Adquisición y análisis de requerimientos 100
+4.6 Validación de requerimientos 110
+4.7 Administración de requerimientos 111
+
+
+Capítulo 5 Modelado del sistema
+118
+5.1 Modelos de contexto 121
+5.2 Modelos de interacción 124
+5.3 Modelos estructurales 129
+5.4 Modelos de comportamiento 133
+5.5 Ingeniería dirigida por modelo 138
+
+
+Capítulo 6 Diseño arquitectónico
+147
+6.1 Decisiones en el diseño arquitectónico 151
+6.2 Vistas arquitectónicas 153
+6.3 Patrones arquitectónicos 155
+6.4 Arquitecturas de aplicación 164
+
+
+Capítulo 7 Diseño e implementación
+176
+7.1 Diseño orientado a objetos con el uso del UML 178
+7.2 Patrones de diseño 189Contenido
+xi
+7.3 Conflictos de implementación 193
+7.4 Desarrollo de código abierto 198
+
+
+Capítulo 8 Pruebas de software
+205
+8.1 Pruebas de desarrollo 210
+8.2 Desarrollo dirigido por pruebas 221
+8.3 Pruebas de versión 224
+8.4 Pruebas de usuario 228
+
+
+Capítulo 9 Evolución del software
+234
+9.1 Procesos de evolución 237
+9.2 Evolución dinámica del programa 240
+9.3 Mantenimiento del software 242
+9.4 Administración de sistemas heredados 252
+Parte 2 Confiabilidad y seguridad
+
+
+Capítulo 10 Sistemas sociotécnicos
+261
+263
+10.1 Sistemas complejos 266
+10.2 Ingeniería de sistemas 273
+10.3 Procuración del sistema 275
+10.4 Desarrollo del sistema 278
+10.5 Operación del sistema 281
+
+
+Capítulo 11 Confiabilidad y seguridad
+289
+11.1 Propiedades de confiabilidad 291
+11.2 Disponibilidad y fiabilidad 295
+11.3 Protección 299
+11.4 Seguridad 302xii Contenido
+
+
+Capítulo 12 Especificación de confiabilidad y seguridad
+309
+12.1 Especificación de requerimientos dirigida por riesgos 311
+12.2 Especificación de protección 313
+12.3 Especificación de fiabilidad 320
+12.4 Especificación de seguridad 329
+12.5 Especificación formal 333
+
+
+Capítulo 13 Ingeniería de confiabilidad
+341
+13.1 Redundancia y diversidad 343
+13.2 Procesos confiables 345
+13.3 Arquitecturas de sistemas confiables 348
+13.4 Programación confiable 355
+
+
+Capítulo 14 Ingeniería de seguridad
+366
+14.1 Gestión del riesgo de seguridad 369
+14.2 Diseño para la seguridad 375
+14.3 Supervivencia del sistema 386
+
+
+Capítulo 15 Garantía de confiabilidad y seguridad 393
+15.1 Análisis estático 395
+15.2 Pruebas de fiabilidad 401
+15.3 Pruebas de seguridad 404
+15.4 Aseguramiento del proceso 406
+15.5 Casos de protección y confiabilidad 410
+Parte 3 Ingeniería de software avanzada
+
+
+Capítulo 16 Reutilización de software
+423
+425
+16.1 Panorama de la reutilización 428
+16.2 Frameworks de aplicación 431Contenido
+xiii
+16.3 Líneas de productos de software 434
+16.4 Reutilización de productos COTS 440
+
+
+Capítulo 17 Ingeniería de software basada en componentes
+452
+17.1 Componentes y modelos de componentes 455
+17.2 Procesos CBSE 461
+17.3 Composición de componentes 468
+
+
+Capítulo 18 Ingeniería de software distribuido
+479
+18.1 Conflictos de los sistemas distribuidos 481
+18.2 Computación cliente-servidor 488
+18.3 Patrones arquitectónicos para sistemas distribuidos 490
+18.4 Software como servicio 501
+
+
+Capítulo 19 Arquitectura orientada a servicios
+508
+19.1 Servicios como componentes de reutilización 514
+19.2 Ingeniería de servicio 518
+19.3 Desarrollo de software con servicios 527
+
+
+Capítulo 20 Software embebido
+537
+20.1 Diseño de sistemas embebidos 540
+20.2 Patrones arquitectónicos 547
+20.3 Análisis de temporización 554
+20.4 Sistemas operativos de tiempo real 558
+
+
+Capítulo 21 Ingeniería de software orientada a aspectos 565
+21.1 La separación de intereses 567
+21.2 Aspectos, puntos de enlaces y puntos de corte 571
+21.3 Ingeniería de software con aspectos 576xiv
+Contenido
+Parte 4 Gestión de software
+
+
+Capítulo 22 Gestión de proyectos
+591
+593
+22.1 Gestión del riesgo 595
+22.2 Gestión de personal 602
+22.3 Trabajo en equipo 607
+
+
+Capítulo 23 Planeación de proyectos
+618
+23.1 Fijación de precio al software 621
+23.2 Desarrollo dirigido por un plan 623
+23.3 Calendarización de proyectos 626
+23.4 Planeación ágil 631
+23.5 Técnicas de estimación 633
+
+
+Capítulo 24 Gestión de la calidad
+651
+24.1 Calidad del software 655
+24.2 Estándares de software 657
+24.3 Revisiones e inspecciones 663
+24.4 Medición y métricas del software 668
+
+
+Capítulo 25 Administración de la configuración
+681
+25.1 Administración del cambio 685
+25.2 Gestión de versiones 690
+25.3 Construcción del sistema 693
+25.4 Gestión de entregas de software (release) 699
+
+
+Capítulo 26 Mejora de procesos
+705
+26.1 El proceso de mejora de procesos 708
+26.2 Medición del proceso 711Contenido
+xv
+26.3 Análisis del proceso 715
+26.4 Cambios en los procesos 718
+26.5 El marco de trabajo para la mejora de procesos CMMI 721
+Glosario
+Índice analítico
+Índice de autores 733
+749
+767
